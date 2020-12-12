@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protocols</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/general.js"></script>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/article.css">
+    <script src="js/sidebar.js"></script>
+</head>
+<body>
+<nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="https://2020.igem.org/Team:DUT_China">
+        <img src="https://2020.igem.org/wiki/images/d/d4/T--DUT_China--team_logo.svg" alt="DUT_China">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav1">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://2020.igem.org/Team:DUT_China">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/4/4a/T--DUT_China--n_home1.png" alt="">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/3/3f/T--DUT_China--n_project1.png"
+                         alt="">
+                    <span>Project</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Description">Description</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Engineering">Engineering
+                        Success</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Protocols">Protocols</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Contribution">Contribution</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/4/4d/T--DUT_China--n_model.png" alt="">
+                    <span>Model</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Model">Electroporation</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/2/23/T--DUT_China--n_hp1.png" alt="">
+                    <span>Human Practices</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Human_Practices">Integrated
+                        Human Practices</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Education">Education</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo"
+                         src="https://2020.igem.org/wiki/images/f/f6/T--DUT_China--n_implementation1.png" alt="">
+                    <span>Implementation</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Implementation">Business
+                        Proposals</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Legislative">Legislative
+                        Proposals</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/2/29/T--DUT_China--n_team1.png" alt="">
+                    <span>Team</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Team">Members</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Attributions">Attributions</a>
+                    <a class="dropdown-item"
+                       href="https://2020.igem.org/Team:DUT_China/Collaborations">Collaborations</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://2020.igem.org/Team:DUT_China/Safety">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/0/04/T--DUT_China--n_safety1.png"
+                         alt="">
+                    <span>Safety</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/b/bb/T--DUT_China--n_awards1.png"
+                         alt="">
+                    <span>Awards</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Human_Practices">Integrated
+                        Human Practices</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Model">Model</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Education">Education</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="top-scroll">
+    <svg class="icon" style="width: 100px; height: 100px;vertical-align: middle;fill: #0073bb;overflow: hidden;"
+         viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2424">
+        <path d="M4.621 514.463h98.188v327.301h98.188v-327.301h98.188v-65.449h-294.563zM528.209 154.51l-163.446 196.347 327.273-0.219zM331.907 841.765h327.286v-392.75h-327.286v392.75zM430.095 514.463h130.912v261.823h-130.912v-261.823zM691.933 449.015v392.75h98.188v-163.651h229.1v-229.1h-327.286zM921.033 612.652h-130.912v-98.188h130.912v98.188z"
+              p-id="2425"></path>
+    </svg>
+</div>
+<div id="title" class="col-12">
+    <div>Protocols</div>
+</div>
+<section id="main-text">
+    <p>
+        Due to the epidemic, we were unable to return to school for experimental verification. The following are the
+        experimental steps we have sorted out through literature research.
+    </p>
+    <article class="article">
+        <h1>1 Preparation of phage genome</h1>
+        <p>
+            The phage T4 obtained from plaques was heated at 100 °C for 10 min and then cooled down to 8 °C. The
+            inactivated phage T4, which was provided by Prof. Song Gao at Jiangsu Ocean University, was stored at -20 °C
+            and used directly as the template for PCR.
+        </p>
+    </article>
+    <article class="article">
+        <h1>2 DNA agarose gel electrophoresis</h1>
+        <h2>2.1 Equipment</h2>
+        <p>
+            Horizontal electrophoresis tank, electrophoresis apparatus, gel mold and comb (Liuyi, Beijing), microwave
+            (Midea, China), laboratory bottles (250 mL), UVCI-1100 Gel Imaging system (Major Science, US)
+        </p>
+        <h2>2.2 Regents</h2>
+        <p>
+            Agarose (Sangon, Shanghai), Ethidium bromide (stock concentration of 10 mg/mL, Thermo Fisher, US), 50× TAE
+            Buffer (Thermo Fisher, US), DNA Ladder (0.2-12 kb, 12 bands), (Beyotime, Shanghai)
+        </p>
+        <h2>2.3 Procedures</h2>
+        <p>1) Measure 1 g agarose.</p>
+        <p>2) Take 20 mL of 5×TAE solution, add water and dilute to 1 L.</p>
+        <p>3) Mix agarose powder with 100 mL 1×TAE in a flask and microwave it for 1-3 min until the agarose is
+            completely dissolved.</p>
+        <p>4) Let agarose solution cool down to about 50 °C, about 5 min.</p>
+        <p>5) Add EtBr to a final concentration of approximately 0.2–0.5 μg/mL.</p>
+        <p>6) Pour the agarose into a gel tray with the well comb in place.</p>
+        <p>7) Place newly poured gel at 4 °C for 10-15 min OR let sit at room temperature for 20-30 min, until it has
+            completely solidified.</p>
+        <p>8) Add loading buffer to each of the DNA samples.</p>
+        <p>9) Once solidified, place the agarose gel into the gel box.</p>
+        <p>10) Fill gel box with 1x TAE until the gel is covered.</p>
+        <p>11) Carefully load a molecular weight ladder into the first lane of the gel.</p>
+        <p>12) Carefully load your samples into the additional wells of the gel.</p>
+        <p>13) Run the gel at 80–150 V until the dye line is approximately 75-80% of the way down the gel. A typical run
+            time is about 1–1.5 hours, depending on the gel concentration and voltage.</p>
+        <p>14) Turn OFF the power, disconnect the electrodes from the power source, and then carefully remove the gel
+            from the gel box.</p>
+        <p>15) Visualize the gel by the UVCI-1100 Gel Imaging system, analyze the size of DNA fragments by comparing
+            them with bands of the DNA ladder.</p>
+    </article>
+    <article class="article">
+        <h1>3 DNA Gel purification</h1>
+        <h2>3.1 Equipment</h2>
+        <p>
+            Microcentrifuge (Thermo Fisher, US), thermostat water bath (Kuansons, China)
+        </p>
+        <h2>3.2 Materials</h2>
+        <p>
+            DNA agarose Gel, SanPrep Column DNA Gel Extraction Kit (Sangon, China)
+        </p>
+        <h2>3.3 Procedures</h2>
+        <p>
+            1) Cut the gel block containing the target fragment from the agarose gel and weigh it.
+        </p>
+        <p>
+            2) Add 3–6 volumes Buffer B2 to 1 volume of gel block (100 mg gel ~100 μL), and incubate in a water bath at
+            50 °C for 5-10 min.
+        </p>
+        <p>
+            3) Transfer the solution to the adsorption column and centrifuge at 8, 000 × g for 30 s, pour out the liquid
+            in the collection tube.
+        </p>
+        <p>
+            4) Add 500 μL Wash Solution and centrifuge at 9, 000 × g for 30s. Pour out the liquid in the collection
+            tube.
+        </p>
+        <p>
+            5) Repeat step 4.
+        </p>
+        <p>
+            6) Centrifuge the empty adsorption column at 9, 000 × g for 1 min.
+        </p>
+        <p>
+            7) Put the adsorption column into a clean 1.5 mL centrifuge tube, add 40 μL Elution Buffer to the center of
+            the adsorption membrane, leave it at room temperature for 1 min, and centrifuge for 1 min. Preserve the DNA
+            solution in the tube.
+        </p>
+    </article>
+    <article class="article">
+        <h1>4 Preparation of pTrp-gRNAa and pTrp-gRNAα</h1>
+        <h2>4.1 Equipment</h2>
+        <p>
+            PCR thermocycler (Thermo Fisher, US), Microcentrifuge (Thermo Fisher, US), micropipette (Ependourf), Vortex
+            (Cyto-bio, China), thermostat water bath (Kuansons, China), Incubator (Zollo, China), Agarose gel
+            electrophoresis system (refer to 2 and 3)
+        </p>
+        <h2>4.2 Materials, regents</h2>
+        <p>pMet-Cas9 and pTrp-gRNA (from Prof. Zhongjun Qin, UCAS), BglII (Thermo fisher, US), dNTP mix (10 mM each in
+            ddH<sub>2</sub>O), sterile ddH<sub>2</sub>O, TOPO XL-2 PCR Cloning Kit (Thermo Fisher, US), 1X TAE buffer
+            (40 mM Tris-acetate, pH 8, 1 mM EDTA), Rapid DNA ligation kit (Beyotime, China), sterile ddH<sub>2</sub>O
+        </p>
+        <h2>4.3 Procedures</h2>
+        <h3>4.3.1 Double digestion of pTrp-gRNA</h3>
+        <img src="https://2020.igem.org/wiki/images/c/c8/T--DUT_China--n_pro_1.png" alt=""
+             class="col-sm-12 col-md-6 mx-auto">
+        <p>
+            37 °C water bath incubation for 4 h.
+        </p>
+        <h3>4.3.2 DNA ligase reaction</h3>
+        <p>Reaction system:</p>
+        <img src="https://2020.igem.org/wiki/images/1/16/T--DUT_China--n_pro_2.png" alt=""
+             class="col-sm-12 col-md-6 mx-auto">
+        <p>Incubate at 25 °C for 30 min.</p>
+        <p class="caption"><b>Table 1.</b> Insert sequence of pTrp-gRNAα and pTrp-gRNAa.</p>
+        <img src="https://2020.igem.org/wiki/images/6/64/T--DUT_China--n_pro_3.png" alt="" class="col-12">
+        <h3>4.3.3 Check the quality of construction of the plasmid</h3>
+        <p>
+            Examining 2 μL of the product by 0.8 % agarose gel electrophoresis. (refer to 2 and 3)
+        </p>
+    </article>
+    <article class="article">
+        <h1>5 Preparation of yeast competent cells</h1>
+        <h2>5.1 Equipment</h2>
+        <p>
+            Microcentrifuge (Thermo Fisher, US), triangular flask, Shaker (Zhicheng, China), microplate reader (BioTek,
+            US), Incubator (Zollo, China), flasks, centrifuge tube (Corning, US), Vortex (Cytobio, China)
+        </p>
+        <h2>5.2 Materials, regents</h2>
+        <p>
+            The highly transformable <i>Saccharomyces cerevisiae</i> strain <i>VL6–48 (MATα, trp1-Δ1, ura3-Δ1, ade2-101,
+            his3-Δ200, lys2, met14)</i> (Bnbio, China)<sup>[1]</sup>, YPD liquid medium (Solarbio, US), Sorbitol
+            Solution (Sangon, China), STC solution (Coolaber, China), YPD medium (Solarbio, US), ddH<sub>2</sub>O
+        </p>
+        <h2>5.3 Procedures</h2>
+        <p>1) Prepare the premixed solution for transformation</p>
+        <img src="https://2020.igem.org/wiki/images/d/d6/T--DUT_China--n_pro_4.png" alt=""
+             class="col-sm-12 col-md-6 mx-auto">
+        <p>2) Add 360 μL premixed solution to a tube with competent cells, gently mix the precipitation repeatedly to
+            make the yeast cells fully suspended.</p>
+        <p>3) Incubate the tube in a water bath at 30 °C for 30 min, and mix well per 10 min. </p>
+        <p>4) Heat the tube in a water bath at 42 °C for 30 minutes and mix well per 10min.</p>
+        <p>5) Centrifuge for 1 min at 12,000× g. Remove the supernatant.</p>
+        <p>6) Resuspend the cell with 1 mL YPD Liquid Medium, shake at 30 °C for 60 min. Centrifuge for 1 min at 12,000×
+            g. Remove the supernatant.</p>
+        <p>7) Add 100 μL sterile water to the precipitation to make it resuspend. Transfer to the corresponding yeast
+            culture plate and spread the cells gently with a bacterial cell spreader. Incubate at room temperature for
+            10 minutes. After the liquid was absorbed, Inverted the plate was and cultured at 30 °C for 2–4 days.</p>
+    </article>
+    <article class="article">
+        <h1>6 Transfer pMet-Cas9 and pTrp-gRNAa to <i>S. cerevisiae.</i></h1>
+        <h2>6.1 Equipment</h2>
+        <p>
+            Microcentrifuge (Thermo Fisher, US), triangular flask, Shaker (Zhicheng, China), thermostat water bath
+            (Kuansons, China), flasks, Incubator (Zollo, China)
+        </p>
+        <h2>6.2 Materials, regents</h2>
+        <p>
+            Competent <i>S. cerevisiae VL6-48 (yMATα)</i> (Obtained in step 5), YPD liquid medium (Solarbio, US), Yeast
+            Transformation Kit (Coolaber, China), SD-Met-Trp and SD-Met (Biofeng, China), IPTG (Thermo Fisher, US)
+        </p>
+        <h2>6.3 Procedures </h2>
+        <p>1) Use the Yeast Transformation Kit (Coolaber, China) to transfer both pMet-Cas9 and pTrp-gRNAα into half
+            amount of <i>S. cerevisiae VL6-48 MATα</i>. Transfer only the pMet-Cas9 into another half. (See operation
+            instructions on the manual of RK21116 SmaI, ABclonal)</p>
+        <p>2) Inoculate these samples on SD-Trp-Met medium and SD-Met medium respectively, incubate at 30 °C for 2-4 d.
+            Then <i>yMATa-Cas9Met-gRNATrp</i> and <i>yMATα-Cas9Met</i> will be obtained.</p>
+        <p>3) Transform all colonies on liquid medium, add appropriate amount of IPTG respectively. </p>
+        <p>4) Inoculate the sample on SD-Met both, incubate at 30 °C for 2–4 d, then <i>yMATa-Cas9Met</i> and <i>yMATα-Cas9Met</i>
+            will be obtained.</p>
+    </article>
+    <article class="article">
+        <h1>7 Preparation of linearized vector</h1>
+        <h2>7.1 Equipment</h2>
+        <p>
+            Microcentrifuge (Thermo Fisher, US), micropipette (Ependourf), Vortex (Cyto-bio, China), Agarose gel
+            electrophoresis system (refer to 2 and 3)
+        </p>
+        <h2>7.2 Materials, regents</h2>
+        <p>
+            Backbone of pRS327, pRS422, pRS423, pRS426 (Biofeng, China), primers for amplification of phage genome
+            fragments (<b>Table 2</b>), SmaI (ABclonal, China), 10× Buffer CutS (ABclonal, China), dNTP mix (10 mM each
+            in ddH2O), sterile ddH2O, TOPO XL-2 PCR Cloning Kit (Thermo Fisher, US), 1× TAE buffer (40 mM Tris-acetate,
+            pH 8, 1 mM EDTA)
+        </p>
+        <p class="caption"><b>Table 2.</b> Primers for linearized vector.</p>
+        <img src="https://2020.igem.org/wiki/images/a/a9/T--DUT_China--n_pro_5.png" alt="" class="col-12">
+        <h2>7.3 Procedures</h2>
+        <h3>7.3.1 Restriction enzyme digestion </h3>
+        <p>Reaction system:</p>
+        <img src="https://2020.igem.org/wiki/images/c/cb/T--DUT_China--n_pro_6.png" alt=""
+             class="col-sm-12 col-md-6 mx-auto">
+        <p>Incubate at 25 °C for 1 h.</p>
+        <p>See operation instructions of the manual of SmaI. </p>
+        <h3>7.3.2 PCR of those backbones</h3>
+        <p>Amplify the vector backbone with each primer via PCR.</p>
+        <p>PCR reaction system:</p>
+        <img src="https://2020.igem.org/wiki/images/4/4b/T--DUT_China--n_pro_7.png" alt=""
+             class="col-sm-12 col-md-8 mx-auto">
+        <p>Use the following cycling parameters for amplicons.</p>
+        <img src="https://2020.igem.org/wiki/images/d/d0/T--DUT_China--n_pro_8.png" alt=""
+             class="col-sm-12 col-md-8 mx-auto">
+        <h3>7.3.3 Check the quality of the PCR product. </h3>
+        <p>
+            After producing the PCR product, analyze 5–10 µL by agarose gel electrophoresis to verify the size, quality,
+            and quantity of the PCR product. (refer to 2 and 3)
+        </p>
+    </article>
+    <article class="article">
+        <h1>8 PCR of 168kb phage genome</h1>
+        <h2>8.1 Equipment</h2>
+        <p>
+            PCR thermocycler (Thermo Fisher, US), Microcentrifuge (Thermo Fisher, US), Agarose gel electrophoresis
+            system (refer to 2 and 3)
+        </p>
+        <h2>8.2 Materials, regents </h2>
+        <p>
+            Phage genomic DNA (obtained in step 1), Phusion DNA polymerase (Thermo Fisher, US), dNTP mix (10 mM each in
+            ddH2O), TOPO XL-2 PCR Cloning Kit (Thermo Fisher, US), 1× TAE buffer (40 mM Tris-acetate, pH 8, 1 mM EDTA),
+            sterile ddH<sub>2</sub>O
+        </p>
+        <h2>8.3 Procedures</h2>
+        <h3>8.3.1 Reaction system:</h3>
+        <img src="https://2020.igem.org/wiki/images/1/14/T--DUT_China--n_pro_9.png" alt=""
+             class="col-sm-12 col-md-8 mx-auto">
+        <p>The primers are on <b>Table 3</b>.</p>
+        <h3>8.3.2 Use the following cycling parameters for amplicons.</h3>
+        <img src="https://2020.igem.org/wiki/images/a/af/T--DUT_China--n_pro_10.png" alt=""
+             class="col-sm-12 col-md-8 mx-auto">
+        <p>See the operations on TOPO XL-2 PCR Cloning Kit.</p>
+        <p class="caption"><b>Table 3.</b> All primers used in PCR amplify wide-type T4 genome.</p>
+        <img src="https://2020.igem.org/wiki/images/d/d0/T--DUT_China--n_pro_11.png" alt="" class="col-12">
+        <h3>8.3.3 Check the quality of the PCR product.</h3>
+        <p>
+            After producing the PCR product, analyze 5–10 µL by agarose gel electrophoresis to verify the size, quality,
+            and quantity of the PCR product. (refer to 2 and 3)
+        </p>
+    </article>
+    <article class="article">
+        <h1>9 Yeast transformation for linearized vector and phage DNA fragments</h1>
+        <h2>9.1 Equipment</h2>
+        <p>
+            Bacterial cell spreader, refrigerated centrifuge (Thermo Fisher, US), thermostat water bath (Kuansons,
+            China), centrifuge tube (Corning, US), Incubator (Zollo, China)
+        </p>
+        <h2>9.2 Strains, regents</h2>
+        <p>
+            Yeast competent cells (obtained in step 5), Linearized pRS423-SmaI-1-2, pRS426-SmaI-2-3, pRS423-SmaI-3-4,
+            pRS426-SmaI-4-5 (obtained in step 7), phage genome PCR fragments (obtained in step 8), SD-His-Met,
+            SD-Ura-Met (Biofeng, China), PEG 8000 (Solarbio, US), YPD liquid medium (Solarbio, US), Zymolyase 20T (ICN
+            Biomedical, US), Sorbitol Solution (Sangon, China), EDTA (Sigma Chemical, US), Yeast nitrogen base without
+            amino acids (Difco, US), 14 mM beta-mercaptoethanol (ME, Sigma Chemical, US), <i>Taq</i> polymerase (Takara,
+            Japan), Diethylpyrocarbonate (Sigma Chemical, US), Potassium acetate (KAc, Sigma Chemical, US), SDS
+            (Bio-rad, US), Calcium chloride (CaCl<sub>2</sub>·2H<sub>2</sub>O), ddH<sub>2</sub>O
+        </p>
+        <h2>9.3 Procedures<sup>[2]</sup></h2>
+        <p>
+            1) Gently mix 200 mL of spheroplast suspension with 2-3 µg of phage DNA fragments and 1 µg of the linearized
+            vector in a 2 mL centrifuge tube. Make 3-5 parallel transformation reactions for each vector. Incubate for
+            10 min at room temperature.
+        </p>
+        <p>
+            2) Add 800 µL of PEG 8000 solution into each tube, gently mix by inverting and incubate for 10 min at room
+            temperature.
+        </p>
+        <p>
+            3) Centrifuge the samples for 5 min at 300-500× g at 5 °C. Remove the supernatant and gently resuspend the
+            spheroplasts in each tube.
+        </p>
+        <p>
+            4) Incubate the spheroplasts for 40 min at 30 °C without shaking.
+        </p>
+        <p>
+            5) Transfer the spheroplasts from each transformation reaction into a separate 15 mL Corning tube containing
+            7 mL of melted SORB-TOP-His selection medium (equilibrated at 50 °C), gently mix and quickly pour agar onto
+            SORB-His plates.
+        </p>
+        <p>
+            6) Keep the plates at 30 °C for 5-7 d until all the transformants become visible.
+        </p>
+        <p>
+            7) Transfer 100-300 primary transformants by toothpicks onto SD-His plates lacking histidine. Individually
+            streak 30 colonies onto each master plate.
+        </p>
+        <p>
+            8) Incubate the plates, each containing a pool of 30 transformants, at 30 °C for 2 d.
+        </p>
+        <p>
+            9) Replica-plate the master plates on new plates with SD-His-Met and SD-Ura-Met selective medium
+            respectively using replica-plating apparatus and velvet pad. Use the master plates for detection of
+            gene-positive pools
+        </p>
+        <p>
+            10) Wash out the yeast cells from each master plate with 5 mL of water into 15-mL Corning tubes, and pellet
+            the cells by centrifugation for 5 min at 1,000g at 5 °C. Remove and discard the supernatant.
+        </p>
+        <p>
+            11) Resuspend each cell pellet in 1 mL of 1 M sorbitol solution by vortex, transfer the suspension to 2-mL
+            Eppendorf microfuge tube and spin for 30 s at 2,000× g at room temperature. Remove and discard the
+            supernatant.
+        </p>
+        <p>
+            12) Resuspend each cell pellet in 0.5 mL of SPE solution containing ME (1/1,000 dilution), add 20 mL of
+            zymolyase solution into each tube and incubate for 2 h at 30 °C.
+        </p>
+        <p>
+            13) Harvest the spheroplasts by centrifugation in the Eppendorf microfuge for 5 min at 2,000× g at room
+            temperature and resuspend the pellets in 0.5 mL of EDTA (0.5 M, pH 7.5), mix well.
+        </p>
+        <p>
+            14) Add 1 mL of diethylpyrocarbonate to each tube at room temperature and vortex well.
+        </p>
+        <p>
+            15) Lyse the spheroplasts completely by incubation at 70 °C for 15 min.
+        </p>
+        <p>
+            16) Add 50 mL of 5 M KAc solution to each tube, mix well and leave the tubes on ice for 30 min.
+        </p>
+        <p>
+            17) Pellet the precipitate by centrifugation for 15 min at 16,000× g at room temperature.
+        </p>
+        <p>
+            18) Transfer the supernatants to fresh microfuge tubes, fill the tubes with ethanol at room temperature, mix
+            and pellet the DNA by centrifugation for 5 min at 16,000× g at room temperature. Remove the supernatant as
+            much as possible and dry the tubes.
+        </p>
+        <p>
+            19) Resuspend each damp DNA pellet in 0.4 mL of water.
+        </p>
+        <p>
+            20) Add 0.5 mL of isopropanol. Mix well and immediately pellet the DNA by centrifugation for 5 min at
+            16,000× g at room temperature.
+        </p>
+        <p>
+            21) Remove the supernatant as much as possible and dry the tubes well.
+        </p>
+        <p>
+            22) Dissolve the final pellet of DNA in 0.3 mL of water.
+        </p>
+        <p>
+            23) Use 1 µL of the DNA solution in a 50 µl PCR with appropriate diagnostic primers to identify
+            gene-positive pools. Conditions for PCR are not different from the <i>Taq</i> polymerase manufacturer’s
+            suggested protocols. (The primer is on <b>Table 4</b>, no use of primer I and II, II and III, III and IV, IV
+            and I)
+        </p>
+        <p>
+            24) Touch the streak of each transformant from replica plates with ‘positive pools’ with a sterile
+            disposable tip and then rinse the tip thoroughly in 100 µl mixture of 80 µl water, 20 µl zymolyase solution
+            and 1 µL of ME.
+        </p>
+        <p>25) Incubate the resulting suspension for 1 h at 30 °C.</p>
+        <p>26) Add 10 µL of 2% SDS solution. Incubate for 15 min at 70 °C.</p>
+        <p>27) Add 10 µL of 5 M KAc solution and leave the tubes on ice for 15 min.</p>
+        <p>28) Spin at 16,000× g for 2 min at room temperature.</p>
+        <p>29) Transfer the supernatants to new Eppendorf tubes and add equal volume of isopropanol. Precipitate 16,000×
+            g for 2 min at room temperature.</p>
+        <p>30) Dissolve the pellets in 30 µL of water.</p>
+        <p>31) Use 1 µL of the DNA solution in a 50 µL PCR with appropriate diagnostic primers to identify gene-positive
+            clones in the pools. (PCR positive colonies include strains <i>yMATa-1His-Cas9Met, yMATα-2Ura-Cas9Met,
+                yMATa-3His-Cas9Met</i> and <i>yMATα-4Ura-Cas9Met</i>)</p>
+        <p class="caption"><b>Table 4.</b> Primers for colony PCR.</p>
+        <img src="https://2020.igem.org/wiki/images/7/7c/T--DUT_China--n_pro_12.png" alt="" class="col-12">
+    </article>
+    <article class="article">
+        <h1>10 Fusion of haploid yeast</h1>
+        <h2>10.1 Equipment</h2>
+        <p>Incubator (Zollo, China) </p>
+        <h2>10.2 Strains, materials, regents</h2>
+        <p><i>S. cerevisiae VL6-48 (yMATa-1His-Cas9Met, yMATα-2Ura-Cas9Met, yMATa-3His-Cas9Met and
+            yMATα-4Ura-Cas9Met)</i>, pTrp-gRNAα and pTrp-gRNAa (Obtained in step 4), pTrp-gRNA-S1S2, pRS422-SmaI and
+            pRS327-SmaI (Obtained in step 7), SD-His-Met-Ura (Biofeng, China), IPTG (Thermo Fisher, US)</p>
+        <h2>10.3 Procedures </h2>
+        <p>1) Spread 500 μL overnight YPD culture on the plate, respectively inoculate <i>yMATa-1His-Cas9Met</i> and
+            <i>yMATα-2Ura-Cas9Met</i>, <i>yMATa-3His-Cas9Met</i> and <i>yMATα-4Ura-Cas9Met</i> on complete YPD agar plates and incubating at
+            30 °C for 2 d. <sup>[3]</sup></p>
+        <p>2) After incubating at 30 °C overnight, replica the lawns onto SD-His-Ura-Met medium, incubated the plates at
+            30 °C for 2 d. Colonies forming a patch contain the strain <i>yMATa/MATα-1His-2Ura-Cas9Met</i> and <i>yMATa/MATα-3His-4Ura-Cas9Met</i>
+            that we obtained.</p>
+        <p>3) Use the Yeast Transformation Kit to transform the linearized pRS422-SmaI-1-3 and pTrp-gRNA-S1S2, the
+            linearized pRS427-SmaI-3-5 backbone and pTrp-gRNA-S1S2 respectively into yeast <i>yMATa/MATα-1His-2Ura-Cas9Met</i>
+            and <i>yMATa/ MATα-3His-4Ura-Cas9Met</i>. Incubate at 37 °C for 1 h.</p>
+        <p>4) Inoculate the sample on SD-Trp both, incubate at 30 °C for 2–4 d, then y <i>yMATa/MATα-1His-2Ura-Cas9Met-gRNAS1S2Trp</i>
+            and <i>yMATa/MATα-3His-4Ura-Cas9Met-gRNAS1S2Trp</i> will be obtained.</p>
+        <p>5) Transform all those colonies on liquid medium, add appropriate amount of IPTG respectively.</p>
+        <p>6) Inoculate the sample on SD-Ade for <i>yMATa/MATα-1His-2Ura-Cas9Met-gRNAS1S2Trp</i> and SD-Lys for <i>yMATa/MATα-3His-4Ura-Cas9Met-gRNAS1S2Trp</i>,
+            incubate at 30 °C for 2–4 d, then <i>yMATa/MATα-12ade-Cas9Met</i> and <i>yMATa/MATα-34lys-Cas9Met</i> will be
+            obtained.</p>
+        <p>7) Use 1 µL of the DNA solution in a 50 µl PCR with primers I and II (<b>Table 4</b>) for <i>yMATa/MATα-12ade-Cas9Met</i>,
+            and III and IV (<b>Table 4</b>) for <i>yMATa/MATα-34lys-Cas9Met</i> to identify gene-positive pools. </p>
+        <p>8) Use the Yeast Transformation Kit to transform the pTrp-gRNAα and pTrp-gRNAα are respectively transformed
+            into yeast <i>yMATa/MATα-12ade-Cas9Met</i> and <i>yMATa/MATα-34lys-Cas9Met</i>. Incubate at 37 °C for 1 h.
+        </p>
+        <p>9) Inoculate the sample on SD-Trp for <i>yMATa/MATα-12ade-Cas9Met</i> and <i>yMATa/MATα-34lys-Cas9Met</i>
+            both, incubate at 30 °C for 2–4 d, then <i>yMATα/MATα-12ade-Cas9Met</i> and <i>yMATa/MATa-34lys-Cas9Met</i>
+            will be obtained.</p>
+    </article>
+    <article class="article">
+        <h1>11 Preparation and transformation of MATa and MATα</h1>
+        <p>The sequences of MATa and MATα are on <b>Table 5</b>.</p>
+        <p class="caption"><b>Table 5.</b> Sequence of gene MATa and MATα.</p>
+        <img src="https://2020.igem.org/wiki/images/6/65/T--DUT_China--n_pro_13.png" alt=""
+             class="col-sm-12 col-md-8 mx-auto">
+        <p>1) Artificial synthesis of <i>MATa</i> and <i>MATα</i></p>
+        <p>2) Amplify the sequence via PCR. (step 4)</p>
+        <p class="caption"><b>Table 6.</b> Primer for cloning MATa and MATα.</p>
+        <img src="https://2020.igem.org/wiki/images/1/17/T--DUT_China--n_pro_14.png" alt=""
+             class="col-sm-12 col-md-8 mx-auto">
+        <p>
+            3) Use the Yeast Transformation Kit to transform MATα and MAT a respectively into yeast <i>yMATα/MATα-12ade-Cas9Met</i>
+            and <i>yMATa/MATa-34lys-Cas9Met</i>. Incubate at 37 °C for 1 h.
+        </p>
+    </article>
+    <article class="article">
+        <h1>12 Fusion of diploid yeast</h1>
+        <h2>12.1 Equipment</h2>
+        <p>Incubator (Zollo, China) </p>
+        <h2>12.2 Strains and materials</h2>
+        <p><i>S. cerevisiae VL6-48 (yMATα/MATα-12ade-Cas9Met and yMATa/MATa-34lys-Cas9Met)</i> (Obtained in step 11),
+            pRS426-Smal-1-5 (Obtained in step 7), SD-Ade-Lys, SD-Trp, SD-Ura-Met (Biofeng, China).</p>
+        <h2>12.3 Procedures</h2>
+        <p>1) Spread 500 μL overnight YPD culture on the plate, respectively inoculate <i>yMATα/MATα-12ade-Cas9Met</i>
+            and <i>yMATa/MATa-34lys-Cas9Met</i> on complete YPD agar plates and incubating at 30°C for 2 d.</p>
+        <p>2) After incubating at 30 °C overnight, replica the lawns onto SD-Ade-Lys medium, incubated the plates at 30°C
+            for 2 d. Colonies forming a patch contain are <i>yMATa/MATa/MATα/MATα-12ade-34lys-Cas9Met</i> we obtained.
+        </p>
+        <p>3) Use the Yeast Transformation Kit to transform the linearized pRS426-Smal-1-5 and pTrp-gRNA-S1S2 into <i>yMATa/MATa/MATα/MATα-12ade-34lys-Cas9Met</i>.
+            Incubate at 37 °C for 1 h.</p>
+        <p>4) Inoculate the sample on SD-Trp, incubate at 30 °C for 2–4 d, then <i>yMATa/MATa/MATα/MATα-12ade-34lys-Cas9Met-gRNAS1S2Trp</i>
+            will be obtained.</p>
+        <p>5) Transform all those colonies on liquid medium, add appropriate amount of IPTG respectively.</p>
+        <p>6) Inoculate the sample on SD-Ura-Met for <i>yMATa/MATa/MATα/MATα-12ade-34lys-Cas9Met-gRNAS1S2Trp</i>,
+            incubate at 30 °C for 2–4 d, then <i>yMATa/MATa/MATα/MATα-1234ura-Cas9Met</i> will be obtained.</p>
+        <p>7) Use 1 µL of the DNA solution in a 50 µl PCR with primers I and IV (<b>Table 4</b>) for <i>yMATa/MATa/MATα/MATα-1234ura-Cas9Met</i>
+            to identify gene-positive pools.</p>
+    </article>
+    <article class="article">
+        <h1>13 Extraction of 176 kb plasmid</h1>
+        <h2>13.1 Equipment</h2>
+        <p>Centrifuge (Thermo Fisher, US), thermostat water bath (Kuansons, China) </p>
+        <h2>13.2 Materials</h2>
+        <p>YeaStar Genomic DNA Kit (Zymo Research, US), absolute ethanol, ddH<sub>2</sub>O</p>
+        <h2>13.3 Procedures</h2>
+        <p>See operation instructions of D2002 YeaStar Genomic DNA Kit .</p>
+        <p>Check the quality of the extracted product: Take 2 μL of the product by 0.8 % agarose gel electrophoresis.
+            (refer to 2 and 3)</p>
+    </article>
+    <article class="article">
+        <h1>14 Rebooting of phages</h1>
+        <h2>14.1 Equipment</h2>
+        <p>Gene Pulser Xcell (Bio-rad, US), Centrifuge (Thermo Fisher, US), Incubator (Zollo, China), electric furnace
+            (Midea, China), Cuvette (BTX, US)</p>
+        <h2>14.2 Materials, regents</h2>
+        <p>Extracted DNA (Obtained in step12), <i>E. coli 10G</i> chemically competent cells (Novo, China), Beef extract
+            peptone medium (Solarbio, US), LB liquid medium (Solarbio, US), Chloroform</p>
+        <h2>14.3 Procedures</h2>
+        <p>1) Extract 3 μL of extracted DNA and electroporate into 20 μL <i>E. coli</i> in a 2 mm gap electroporation
+            cuvette at 2,500 V, 25 μF, 200 Ω using Gene Pulser Xcell.</p>
+        <p>2) Incubate the cells at 37 °C for 1 h in 1 mL LB liquid medium.</p>
+        <p>3) Add drops of chloroform to kill the cells and release T4 phage.</p>
+        <p>4) Prepare the bottom medium (about 10 mL per dish, 1.5% agar), poured onto the plates.</p>
+        <p>5) Take 0.1 mL of phage suspension, add 0.2 mL of <i>E. coli</i> suspension, mix and add dropwise to the
+            bottom medium.</p>
+        <p>6) Take the upper medium (0.8% agar), melt and cool to 48 °C, pour 5 mL on the bottom medium, mix well and
+            incubate at 37 °C.</p>
+        <p>7) Prick a single plaque with an inoculation needle, carefully take the phage, insert it into the liquid
+            medium containing <i>E. coli</i>, and cultivate it at 37 °C. After the bacteria in the tube is completely
+            dissolved, filter and sterilize to obtain purified phage.</p>
+    </article>
+    <article class="article">
+        <h1>15 One-time phage propagation assays</h1>
+        <h2>15.1 Equipment</h2>
+        <p>Automatic cell counter and counting board (LUNA, Korea), multiskan go microplate
+            (Thermo Fisher, US), 96 Well cell culture cluster (Corning, US), plate, Incubator (Zollo, China)</p>
+        <h2>15.2 Materials, regents</h2>
+        <p>Transformed <i>E. coli 10 G</i> (Obtained in step 13), LB liquid medium (Solarbio, US), chloroform</p>
+        <h2>15.3 Procedures</h2>
+        <p>1) Incubate the supernatants of transformed <i>E. coli 10 G</i> for 1-2 h.</p>
+        <p>2) Add chloroform to kill the cells and release phages.</p>
+        <p>3) Mix the supernatants and pour onto plates, incubate overnight at 37 °C.</p>
+        <p>4) After incubation, examine each plate and count the number of plaques on each plate that has clearly
+            differentiated plaques.</p>
+        <p>5) Analyzed for plaque formation and calculate the amount of plaque.</p>
+        <p>6) Calculate the number of lytic phages per milliliter that were in the original phage suspension using the
+            formula mentioned above.</p>
+    </article>
+    <article>
+        <h1>16 References</h1>
+        <p>[1]Larionov, V., Kouprina, N., Solomon, G., Barrett, J. C., & Resnick, M. A. (1997). Direct isolation of
+            human BRCA2 gene by transformation-associated recombination in yeast. <i>Proceedings of the National Academy
+                of Sciences, 94</i>(14), 7384-7387.</p>
+        <p>[2]Kouprina, N., & Larionov, V. (2008). Selective isolation of genomic loci from complex genomes by
+            transformation-associated recombination cloning in the yeast <i>Saccharomyces cerevisiae</i>. <i>Nature
+                protocols, 3</i>(3), 371.</p>
+        <p>[3]Xie Ze-Xiong, Mitchell Leslie A, Liu Hui-Min, et al. Rapid and Efficient CRISPR/Cas9-Based Mating-Type
+            Switching of <i>Saccharomyces cerevisiae</i> .. 2018, 8(1):173-183.</p>
+    </article>
+    <p class="text-right">
+        <a href="https://2020.igem.org/Team:DUT_China/Contribution">Contribution&#10148;</a>
+    </p>
+</section>
+<footer id="footer">
+    <img class="flower flower1" src="img/T--DUT_China--flower1.png" alt="">
+    <img class="flower flower2" src="img/T--DUT_China--flower2.png" alt="">
+    <p class="copyright">© 2020 Dalian University of Technology iGEM Team</p>
+    <div class="row">
+        <div class="col-lg-4 footer-left">
+            <h2><span>DUT</span> iGEM Players</h2>
+            <img src="img/T--DUT_China--logo.svg" alt="School Logo">
+            <p class="plain-text text-left">
+                <b>Address</b>: No.2 Linggong Road, Ganjingzi District, Dalian City, Liaoning Province, P.R.C.,
+                116024<br>
+                <b>Official Website</b>: <a href="http://en.dlut.edu.cn/" target="_blank">http://en.dlut.edu.cn/</a><br>
+                <b>Team Email</b>: <a href="mailto:igem_dlut@163.com" title="Click to contact us">igem_dlut@163.com</a>
+            </p>
+        </div>
+
+        <div class="col-lg-4 footer-center">
+            <div>
+                <h4>About Dalian University of Technology</h4>
+                <p class="plain-text school-intro text-left">
+                    Dalian University of Technology (DUT) is a national key university administrated directly under the
+                    Ministry of Education of China, which is also sponsored by Project 211 and Project 985. DUT keeps
+                    fostering elites, promoting science and technology, inheriting excellent cultures and guiding the
+                    social climate as its mission, adheres to DUT spirit of “Unity and Progress, Truth and Innovation”,
+                    dedicates itself to the creation, discovery, impart, conservation and application of knowledge, and
+                    endeavors to undertake social responsibilities to serve the country and the world.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 footer-right">
+            <div>
+                <h4>Follow us</h4>
+                <p class="plain-text">
+                    <a target="_blank" href="https://mp.weixin.qq.com/s/gDbIeINj-mwxmwDkOSyFQg">
+                        WeChat Official Account
+                    </a>
+                    <br>
+                    <a target="_blank" href="https://space.bilibili.com/494554805/">
+                        Bilibili Account
+                    </a>
+                </p>
+            </div>
+            <br>
+            <div>
+                <h4>Sponsors</h4>
+                <img src="img/T--DUT_China--SnapGene_Logo.png" alt="SnapGene">
+                <br>
+                <img src="img/T--DUT_China--biology.svg" alt="School of Bioengineering">
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    //About the sidebar & top-scroll--linked to sidebar.js & general.js
+    window.onload = function () {
+        setTopScroll();
+    };
+
+    window.onresize = window.onscroll = function () {
+        let textT = document.getElementById("main-text").offsetTop;
+        let currentH = document.documentElement.scrollTop || document.body.scrollTop;
+        let topScroll = document.getElementById("top-scroll");
+        if (currentH > textT - 120) {
+            topScroll.setAttribute("class", "top-scroll-active");
+        } else {
+            topScroll.setAttribute("class", "");
+        }
+    };
+</script>
+</body>
+</html>

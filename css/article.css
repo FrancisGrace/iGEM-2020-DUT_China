@@ -1,0 +1,109 @@
+/*
+ *article.css--Styles used on long articles
+ */
+
+#main-text {
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#main-text .article {
+    padding: 10px 0;
+}
+
+#main-text h1, #main-text h2, #main-text h3, #main-text h4 {
+    font-family: "Noto Sans", "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+}
+
+#main-text p {
+    font-family: "Noto Sans", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+#main-text p.no-indent {
+    text-indent: 0;
+}
+
+#main-text p.caption {
+    margin: 5px 0;
+    font-size: 15px;
+    text-indent: 0;
+}
+
+#main-text a {
+    color: #0073bb;
+}
+
+#main-text a:hover {
+    text-decoration: underline;
+}
+
+#main-text img {
+    display: block;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main-text div.too-long {
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#main-text div.too-long img {
+    height: 100%;
+}
+
+#main-text .formula {
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+#main-text .formula img.double{
+    height: 50px;
+    margin: 0 auto;
+}
+
+#main-text .formula img.single{
+    height: 25px;
+    margin: 0 auto;
+}
+
+#main-text .formula p {
+    margin-bottom: 0;
+    text-indent: 0;
+}
+
+#main-text .text-right a {
+    font-size: 25px;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 992px) {
+    #main-text {
+        width: 90%;
+    }
+
+    #main-text .formula img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+}

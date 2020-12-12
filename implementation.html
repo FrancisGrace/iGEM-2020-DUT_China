@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Proposals</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/general.js"></script>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/article.css">
+    <script src="js/sidebar.js"></script>
+</head>
+<body>
+<nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="https://2020.igem.org/Team:DUT_China">
+        <img src="https://2020.igem.org/wiki/images/d/d4/T--DUT_China--team_logo.svg" alt="DUT_China">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav1">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://2020.igem.org/Team:DUT_China">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/4/4a/T--DUT_China--n_home1.png" alt="">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/3/3f/T--DUT_China--n_project1.png"
+                         alt="">
+                    <span>Project</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Description">Description</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Engineering">Engineering
+                        Success</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Protocols">Protocols</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Contribution">Contribution</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/4/4d/T--DUT_China--n_model.png" alt="">
+                    <span>Model</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Model">Electroporation</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/2/23/T--DUT_China--n_hp1.png" alt="">
+                    <span>Human Practices</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Human_Practices">Integrated
+                        Human Practices</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Education">Education</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo"
+                         src="https://2020.igem.org/wiki/images/f/f6/T--DUT_China--n_implementation1.png" alt="">
+                    <span>Implementation</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Implementation">Business
+                        Proposals</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Legislative">Legislative
+                        Proposals</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/2/29/T--DUT_China--n_team1.png" alt="">
+                    <span>Team</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Team">Members</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Attributions">Attributions</a>
+                    <a class="dropdown-item"
+                       href="https://2020.igem.org/Team:DUT_China/Collaborations">Collaborations</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://2020.igem.org/Team:DUT_China/Safety">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/0/04/T--DUT_China--n_safety1.png"
+                         alt="">
+                    <span>Safety</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <img class="nav-logo" src="https://2020.igem.org/wiki/images/b/bb/T--DUT_China--n_awards1.png"
+                         alt="">
+                    <span>Awards</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Human_Practices">Integrated
+                        Human Practices</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Model">Model</a>
+                    <a class="dropdown-item" href="https://2020.igem.org/Team:DUT_China/Education">Education</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="top-scroll">
+    <svg class="icon" style="width: 100px; height: 100px;vertical-align: middle;fill: #0073bb;overflow: hidden;"
+         viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2424">
+        <path d="M4.621 514.463h98.188v327.301h98.188v-327.301h98.188v-65.449h-294.563zM528.209 154.51l-163.446 196.347 327.273-0.219zM331.907 841.765h327.286v-392.75h-327.286v392.75zM430.095 514.463h130.912v261.823h-130.912v-261.823zM691.933 449.015v392.75h98.188v-163.651h229.1v-229.1h-327.286zM921.033 612.652h-130.912v-98.188h130.912v98.188z"
+              p-id="2425"></path>
+    </svg>
+</div>
+<div id="sidebar">
+    <table>
+        <tr>
+            <td>
+                <canvas width="40" height="40" class="canvas"></canvas>
+            </td>
+            <td class="side-item">1 Overview</td>
+        </tr>
+        <tr>
+            <td>
+                <canvas width="40" height="40" class="canvas"></canvas>
+            </td>
+            <td class="side-item">2 Product and Customer</td>
+        </tr>
+        <tr>
+            <td>
+                <canvas width="40" height="40" class="canvas"></canvas>
+            </td>
+            <td class="side-item">3 Entrepre-<br>neurial Team</td>
+        </tr>
+        <tr>
+            <td>
+                <canvas width="40" height="40" class="canvas"></canvas>
+            </td>
+            <td class="side-item">4 Market and Competition</td>
+        </tr>
+        <tr>
+            <td>
+                <canvas width="40" height="40" class="canvas"></canvas>
+            </td>
+            <td class="side-item">5 Marketing and Sales</td>
+        </tr>
+        <tr>
+            <td>
+                <canvas width="40" height="40" class="canvas"></canvas>
+            </td>
+            <td class="side-item">6 Business Model</td>
+        </tr>
+    </table>
+</div>
+<div id="title" class="col-12">
+    <div>Implementation - <br>Business Proposals</div>
+</div>
+<section id="main-text">
+    <article class="article">
+        <h1>1 Overview</h1>
+        <p>
+            With multiple breakthroughs in phages engineering resurfacing in public attention, a new form of treatment has given us an alternative approach. We are looking for a more effective, convenient and low-cost way to help people with phage therapy, now and in the future. In recent years, YAC-mediated phage reconstruction has been becoming the mainstream method for phage engineering. But this method is time-consuming and with low success rate. In our research, we upgrade the classical YAC strategy to make it possible to engineer any phage.
+        </p>
+        <p>
+            We are committed to introducing this technology to create ideal phages and produce them in large quantities. The main bottlenecks that limit the application of Phage therapy now are not only the the toxin gene it carries that may cause some adverse reactions, the complex harmacokinetic characteristics, but also the narrow host spectrum which makes the precise medicine design hard.
+        </p>
+        <p>
+            The high specificity of a single phage, the corresponding host range is very narrow, and it can only act on a few bacterial types of the same species, which limits the clinical application to a certain extent. Therefore, we want to produce a more extensive host range of engineered phages through manipulating the phage genome. Just like designing such a production line to generate “Pygmalion” phages and give the phages new properties that we want.
+        </p>
+        <p>
+            In our project, we reboot a phage through a yeast-based platform, which means that viable phage with a known gene sequence is able to be de novo synthesized. By rebooting large genome phages, we can perform genetic modification and functional identification, evaluate phage reagents and build models, which make “rebooting” phages a great advantage in phage therapy against super bacteria. After that, we divide the T4 phage genome into four fragments and reassemble it. These fragments will be converted into yeast artificial chromosomes (YACs), which will be assembled into 4 different plasmids. Then the four plasmids encoding the entire T4 genome will be introduced into four <i>E. coli</i> respectively, and then the T4 phage will be restarted.
+        </p>
+        <p>
+            After fully considering the safety of the project itself and confirming that it is beneficial to the society, we think that this project is very suitable to become an industrial chain that can rapidly and produce new bacteriophages in large quantities, according to the needs of customers. We believe that we can use the technology mentioned above to successfully produce the targeted phages to import them into the market with obtaining good profits. In terms of the current situation, the global bacteriophage industry is developing steadily. In 2019, the global bacteriophage market value reached 1.1 billion RMB, which was expected to grow to 1.5 billion RMB in 2026, with an annual compound growth rate of 3.8%. North America has a market position that can not be ignored in the past few years, and it is expected to maintain stable development in the future, especially in the United States. The changes in the US will have an important impact on the development of global phage therapy services. On the other hand, the Asia Pacific market will play a more important role in driving the development of the global market, especially thanks to the rapid growth of China, India and Southeast Asian countries.
+        </p>
+        <p>
+            Only veterinary phage therapy products are on the market in China now, while plant phage therapy and human phage therapy products are still in the research and development stage. At present, the broad antibiotics market in China's aquaculture industry is about 35 billion RMB, which is consumed 84.2 thousand tons every year. In order to deal with this emergency situation, China issued relevant policies in 2017 (<i>National action plan to curb drug resistance of bacteria of animal origin (2017-2020)</i> and <i>National action plan to curb drug resistance of bacteria from animals (2017 – 2020)</i> ), to prohibit the use of antibiotics in aquaculture. The three commonly used methods to replace antibiotics are bacteriophage method, neobacteriocin method and probiotics method. Among them, bacteriophage method has attracted much attention because of its safety, harmlessness and high efficiency. About this, Pan Qiang, the Founder and Chairman of Qingdao Nova Biotech Co., Ltd, said that it will be around a billion if the market size of new phage veterinary drugs includes the use of non-standard antibiotics in the aquatic field, will be about 10 billion RMB even if calculated by 2% - 3% of the initial replacement antibiotics. With the relevant policies issued by the Chinese government, continuous breakthroughs in phage therapy study and development technology, and the demand of various industries, the phage therapy market in China has continued to expand. We believe that the commercialization process of bacteriophage therapy products will be accelerated after marketing. Phages will gradually replace some antibiotics solving the problems of bacterial resistance.
+        </p>
+        <p>
+            Currently, as the local veterinary phage products are relatively single, consumers are limited to some extent. It is expected that with the continuous enrichment of veterinary phage products in the future, the number of participants will continue to increase and the market will continue to be refined. We believe that in this process, our technology can bring great convenience to producers.
+        </p>
+        <p>
+            Phage therapy is just in the research and development stage in the human-use field in China, and no phage product has been approved for marketing either globally. According to <i>the Overview of China's Bacteriophage therapy industry in 2019</i> released by HeadLeopard research society, it is expected that before 2020, China's phage therapy will continue to be in the stage of scientific research and clinical trials. After 2020, some biopharmaceutical companies will have phage therapy related drugs on the market. By then, the phage therapy market will gradually take shape, while the market size is expected to reach 110 million RMB. In addition, with the gradual expansion of the scope of phage therapy to replace antibiotics, the market size of phage therapy will keep growing. It is expected to reach 840 million RMB in 2023, which is at a growth rate of 96.9%.
+        </p>
+        <p>
+            As we see, the phage market in China has huge potential. In these circumstances,  In our business model, we will produce the precisiont phages efficiently and in large quantities according to the requirements of clients. This is the golden period for both our business development and the development of phage therapy our business development.
+        </p>
+    </article>
+    <article class="article">
+        <h1>2 Product and Customer</h1>
+        <p>
+            At present, the development and application of phage therapy need to go through a long time. The most frequently used method, Phage Cocktail Therapy, has three difficulties. First, it is hard to select one or several phages with high specificity for pathogenic bacteria. This kind of screening is often uncertain, which makes this process time consuming. Secondly, the high specificity of phages leads to difficulty to obtain a broad-spectrum antibacterial drug, so we can only customize personal treatment scheme according to the pathogenic bacteria strains. This scheme will waste a lot of time and medical resources. Thirdly, bacterial infection is not a static process. They can evolve during reproduction to escape phage tracking. If this happens, we have to change the formulation of the phage cocktail to ensure the stability.
+        </p>
+        <p>
+            The target customers of our products are pharmaceutical companies(both for human and veterinary medicine), phage research institutions, or related laboratories. The problems they are facing are as fellows. The researches and developments of antibiotic drugs are constrained by bacterial resistance, and this phenomenon is becoming more and more serious. The screening and identification of new drugs are more difficult, and may have little effect after being put into use. The research cycle of bacteriophage drugs is too long, and it needs to track and diagnose patients for a long time, in order to adjust the treatment strategy immediately. This process may consume a lot of medical resources. At present, phage therapy is mainly used in experimental clinical treatment. It has not been applied on a large scale for common bacterial infection treatment, and there is a lack of general drugs for this field.
+        </p>
+        <p>
+            The main problem for our customers is that they lack a long-term, sustained and effective strategy for antimicrobial research and development. The general antibiotics cannot adapt to the “post-antibiotic” era when bacterial resistance is generally increasing. The new bacteriophage drugs lack a universal and efficient development method, so it is difficult to deal with the large variety and complex composition of pathogenic bacteria. Therefore, our customers need a new method that can change the inducement of phage specificity to pathogenic bacteria, so that it no longer depends on long-term culture based on pathogenic bacteria or large-scale screening of bacteriophages. Our solution for customers is a process of gene site modification, high fidelity cloning and large-scale production for bacteriophages. This process can replace or add heterologous genes for phages, and does not need to cultivate host pathogenic bacteria. By using common and safe biomaterials, the most expected phages can be obtained.
+        </p>
+        <p>
+            We will provide customized services for pharmaceutical companies or laboratories to design, modify or produce phages. The customer shows the type of bacteriophage to be used, the gene locus to be changed or the foreign gene to be added. Then, from the gene level, we have given phages unique characteristics by modifying the genome of phages (including the enhancement and deletion of original genes, or the addition of foreign genes), expressing modified genome and restart the whole phage. By this way, we achieve the phage modification and synthesis according to the requirements. If customers want to acquire phage genomic library for their own research or modification, we can also provide them with a toolkit, including phage genomic library (carried by yeast cells), tool plasmids (including CRISPR system, YAC vectors and other basic parts), and a complete protocol for modified phage synthesis.
+        </p>
+        <p>
+            Compared with the general phage drugs production scheme, our scheme has many significant advantages. First, the modification of phage can be achieved directly in gene level without long-term searching and screening. It also means that we can endow bacteriophages with some characters that do not exist in nature. This provides a new method of gene transfection for gene engineering. Therefore, our scheme has a wide range o applications and great potential. Secondly, this scheme has lower requirements on experimental environment. General phage cultivation needs ample natural phage samples and a large number of host cells. After selecting the appropriate detection method, it is possible to obtain highly specific phages after multiple generations of cultivation and screening. This has a great demand on the experimental environment, such as human resources and experimental materials. In contrast, our program only needs basic genetic engineering technology and molecular biology tools to obtain the modified phage in a few weeks with a high success rate. Third, our scheme only requires the most basic biomaterials. In general, phage culture needs corresponding host cells, so this culture method may be very dangerous for some deadly pathogenic bacteria. However, our protocol is not very strict for the culture. We can use the same species of bacteria with lower risk to culture, and obtain the same specific modified phage.
+        </p>
+        <p>
+            According to the feedback from interview of human practice, we found that many researchers have proposed substitutes for antibiotics, such as antibacterial peptides, traditional Chinese medicine extracts, etc. However, there are still some shortcomings in these schemes. For example, antibacterial peptides have the disadvantages of easy degradation, unstable pesticide effect, high cost of chemical synthesis, and difficult to be popularized and applied. On the other hand, the research progress of traditional Chinese medicine is relatively slow, and this substitute has other disadvantages such as resource shortage, unstable efficacy and treatment, and high cost. Therefore, it is feasible to select phages as the substitute of antibiotics. At present, the application of phages in medical field still has vacancy. The therapy based on complete phage is mainly in animal experiment stage, and the drugs based on bacteriophage lytic bacteriophage are not widely used. The main reasons for this situation are as follows: the host range of phages is relatively single and the universality is low; phages are easy to be cleared by the immune system of human body, so there are limitations in the time and space. Our project can effectively adjust these problems to obtain more functional and commercial phage products.
+        </p>
+        <p>
+            The potential value of bacteriophages is being discovered and utilized constantly, especially in the "post antibiotic" era. The pharmaceutical industry, aquaculture, environmental protection and other fields need a new method to compete with more powerful bacteria than before. One of the difficulties in phage reconstruction and rebooting is how to design, construct and control a large genome accurately. We need to find the target gene from hundreds of thousands of base pairs, and carry out controllable operation on it. This operation may include adding, deleting and replacing a certain DNA sequence, and it cannot affect the rest of the whole genome. In order to achieve this goal, we adopt the method of constructing genomic library by fragments, to divide different gene sequences into isolated regions, and then operate. Our technical highlights are mainly focused on the recombination of these gene fragments in order. We use the mating phenomenon between yeasts with different mating-types to mediate the fusion of yeast cells, and achieve the purpose of concentrating fragments from different cells. At the same time, we transform plasmids with CRISPR system into the fusion cells to complete the recombination of plasmids. Finally, the plasmid containing the whole genome will be transformed into the host cell by electroporation, and complete the final replication and rebooting. This process can minimize the adverse effects of gene modification on phage genome, and also ensure that customers can modify phages according to their needs freely.
+        </p>
+        <p>
+            Now the technology is developed by a team of undergraduate students that participate in the iGEM competition, hosted by the iGEM foundation in Boston (Massachusetts, USA). We have completed the overall design of this project, and established a feasible theoretical basis through the literature research, quotation and verification. At the same time, we also carried out basic verified experiment to prove the feasibility of key steps in this process. After that, we plan to carry out a complete experiment, including the selection of phages, the construction of genomic library, the design of gene modification scheme, the rebooting of phage and the testing of new characters. After completing this series of work, we will start to design and build a phage modification toolkit.
+        </p>
+        <p>
+            In the future, our technique may be more widely used. We will use this technique to assist in environmental quality monitoring, in order to develop a more sensitive, visual and long-term effective monitoring tool.
+        </p>
+    </article>
+    <article class="article">
+        <h1>3 Entrepreneurial Team</h1>
+        <h2>3.1 Enterprise Profile</h2>
+        <p>
+            The business scope of the enterprise includes technology research and development, technology transfer, technology consulting, and technology services. In terms of organizational structure, the company adopts a flat model, which avoids many of the drawbacks of hierarchical management, such as overlapping organizational levels, employee redundancy, and poor organization operation efficiency, which accelerates the flow of information and refines management Levels are conducive to improving decision-making efficiency. The company has six departments: R&D department, marketing department, human resources department, finance department, public relations department and operation department.
+        </p>
+        <h2>3.2 Company Leader and Responsibilities</h2>
+        <p class="no-indent">
+            Executive Director<br>
+            Name: Bolong Li<br>
+            Responsibilities: The executive director is responsible to the shareholders' meeting, who is responsible for convening and organizing board meetings. Review and approve the work plan, work summary, and formulate a reward and punishment system for the general manager. The chairman has the right to decide major matters of the company, such as investment, capital increase, capital reduction, etc.
+        </p>
+        <p class="no-indent">
+            Supervisor<br>
+            Name: Sizhe Chen<br>
+            Responsibilities: Supervise the performance of duties by directors and senior management; monitor violations of laws and laws. Responsible for design management, process management, scientific research and development planning post; preparation of the company's mid- and long-term scientific and technological development plan scientific research plan post.
+        </p>
+        <p class="no-indent">
+            Head of R&D Department<br>
+            Name: Yuliang Huo<br>
+            Responsibilities: Responsible for the company's new product development and related platform maintenance, and do a good job in intellectual property and technology protection.
+        </p>
+        <p class="no-indent">
+            Head of Marketing Department<br>
+            Name: Ling Zhu<br>
+            Responsibilities: Understand the industry situation and the basic situation of customers, do market research and analysis, formulate marketing plans based on market conditions and national policies, and promote sales.
+        </p>
+        <h2>3.3 R&D Management</h2>
+        <p>
+            Based on the R&D system structure design and various management theories, the three key indicators for comprehensively measuring the pros and cons of R&D management: quality, time and cost, with the help of an information platform, team building, process design, and specific Coordination activities, such as performance management, cost management, project management, risk management, etc. After the company's new products have successfully entered the market, the second-generation R&D will be carried out according to product effects and market demand, and at the same time, phased key R&D will be carried out according to the long-term development strategy and market changes.
+        </p>
+    </article>
+    <article class="article">
+        <h1>4 Market and Competition</h1>
+        <h2>4.1 Market Policies</h2>
+        <p>
+            Our product solutions are in line with China's new policies and regulations, which support our longer-term planning. Since the year of 2015, the policy of limiting and stopping antibiotics has been introduced continuously. In 2016, 14 departments including the National security and health and Family Planning Commission jointly formulated <i>the National Action Plan to Curb Bacterial Drug Resistance (2016-2020)</i>, which is easy to strengthen the management of antibacterial drugs and cope with the risks and challenges brought about by bacterial resistance. China's Ministry of Agriculture issued No. 194 announcement this year, which clearly pointed out that the production of feed antibiotics should be stopped from July 1, 2020. Phage as a green, safe and efficient substitute for new antibiotics has practical significance for China's aquaculture industry. The government supports the research and development of new anti infective drugs, instruments and equipment, especially innovative drugs with different molecular structures.
+        </p>
+        <h2>4.2 Market Capacity and Structure</h2>
+        <p>
+            The global bacteriophage market held US$ 567.9 Million in 2017 and expected to grow at compound annual growth rate (CAGR) of 3.9% during the forecast period from 2018 to 2026. In 2027, North America held the largest regional market for phages with over 37% share of the global market in 2016. Europe is the second largest market for bacteriophage on the grounds of wide application of bacteriophage in food and environmental fields and stable presence of phage therapy in the region. Asia Pacific will witness the fastest progress in the global market. Rapidly evolving biotechnology infrastructure, evolving agriculture practices, and equally supportive government initiatives contribute to the rapid growth of Asia Pacific market while our Project can just follow the trend of market expansion.
+        </p>
+        <h2>4.3 Target Market and Product</h2>
+        <p>
+            The target customers of our products are pharmaceutical companies (both for human and veterinary medicine), phage research institutions, or related laboratories. We will follow their demands to give phages unique characteristics by modifying the genome of phages from the gene level. If customers want to acquire phage genomic library for their own research or modification, we can provide them with a toolkit, including phage genomic library (carried by yeast cells), tool plasmids (including CRISPR system, YAC vectors and other basic parts), and a complete protocol for modified phage synthesis. We can also produce a large number of phages by fermentation if customers need large quantities of phages.
+        </p>
+        <h2>4.4 Competition Analysis</h2>
+        <p>
+            At present, researchers in relevant professional fields are actively developing new therapies to replace antibiotics. In recent years, there have been a large number of related patents, but these methods have not been completely reliable and low-cost. There is no large-scale promotion abroad either. At present, only a few companies in China, such as as Phagelux, Dalian Hissen and Shanghai Hi-Tech-Bio, are engaged in the development of bacteriophage therapy preparations. There are almost no companies engaged in phage synthesis. But we do believe phage synthesis are the latest trends in the bacteriophage market and valuable opportunities for key players.
+        </p>
+    </article>
+    <article class="article">
+        <h1>5 Marketing and Sales</h1>
+        <p>
+            Our customers are mainly manufacturers of phage preparations and various phage research laboratories. In addition, our customers are also our important partners. We are committed to the production of standardized products, which helps to reduce drug prices and facilitate the commercial success of the products. We believe that the regulatory path for standardized products will be more formal and smooth. With the continuous development of bacteriophage therapy in China, the establishment and improvement of phage drug regulatory regulations will become inevitable. Companies that carry out standardized product development programs will gain more advantages in the regulatory path, such as shortening the approval time, which will help companies open up the market early. We need partners to advance the legalization of bacteriophage drugs.
+        </p>
+        <p>
+            China's bacteriophage therapy is in the initial stage of development, and the number of local bacteriophage therapy research and drug production companies is small. In the field of agricultural plant and veterinary use, only Qingdao Nova Biotechnology and Nanjing Phageluc are the only companies that have products on the market in China.
+        </p>
+        <p>
+            In the field of human medicine, there is no clinical trial of phage therapy in China. Only A few companies such as Phagelux, Dalian Hissen and Shanghai Hi-Tech-Bio are developing human phage therapy preparations.In this process of continuous development of phage therapy, the market is huge and promising.
+        </p>
+        <p>
+            During our investigation, Qingdao Nova Biotechnology Co., Ltd. (anonymous) may become our potential user. Nova Biotechnolog collected a large number of strains and strains. After repeated cultivation, they screened out more than 500 strains with the broadest spectrum and the most suitable for large-scale cultivation and preparation.It has established a large number of strains that can be used for basic research strains, also built the largest phage library in China.
+        </p>
+    </article>
+    <article class="article">
+        <h1>6 Business Model</h1>
+        <h2>6.1 Key Activities</h2>
+        <p>
+            We will produce the targeted phages according to the requirements of bacteriophage manufacturers. Or arrange experienced team members to participate in phage culture in pharmaceutical companies if they want. The two pathways can be selected by the phage manufacturer.
+        </p>
+        <p>
+            We want to use this platform to synthesize the T4 phage genome de novo based on the PCR products and the whole T4 genome, are introduced into <i>E. coli</i> simultaneously and the T4 phage will be rebooted. In our experiment, we divide the T4 phage gene into four fragments and synthesize it. These fragments will be converted into yeast artificial chromosomes (YACs), which will be assembled into 4 different plasmids. Then the four plasmids encoding the entire T4 genome will be introduced into four <i>E. coli</i> respectively, and then the T4 phage will be rebooted.
+        </p>
+        <h2>6.2 Value Proposition</h2>
+        <p>
+            At present, most companies have low efficiency and high cost for phage gene editing. However, we cut the phage genome into four fragments, which not only improves editing efficiency, but also greatly reduces the cost. In addition, the mathematical model optimized for this project is electroporation —Restart is more efficient and cost-effective than the phage restart method adopted by most companies. By rebooting large genome phages, we can perform genetic modification and functional identification, evaluate phage reagents and build models, which make "rebooting" phages a great advantage in phage therapy against superbugs.
+        </p>
+        <h2>6.3 Customer Segment</h2>
+        <p>
+            Our profit is from producing new phages, which opens an exploratory and pioneering industry. We are looking for bacteriophage manufacturers, pharmaceutical companies, or research institutes with demands for new phages. Therefore, we would like to build long-term cooperative relationship with customers to conduct an expansion of new business. For sure, we will jointly promote the legalization of bacteriophage products at the same time.
+        </p>
+        <h2>6.4 Cost Structure</h2>
+        <p>
+            Our main costs are lab rent, labor cost and material cost for bacteriophage culture. According to the researchers who have been engaged in phage therapy research for more than eight years, from the perspective of market price, the cost of phage raw materials is low, there are many manufacturers and the bargaining power of the industry is low. Therefore, the market price of bacteriophage raw materials is not high, accounting for 10% of the total cost of bacteriophage body therapy preparation products. The function of the equipment needed for the preparation of bacteriophage body therapy preparation products is relatively basic and belongs to low-end medical devices. The cost of equipment in midstream laboratories and research institutes is relatively low, and the average price of each machine is no more than 500 thousand , accounting for less than 15% of the total cost of bacteriophage body therapy preparation products.
+        </p>
+        <p>
+            In addition, advertising is one of our important expenses. We will promote our project on the web, on TV and in various biological journals, and organize or attend related conferences and exhibitions. We intend to attract long-term customers through customized service, professional technology, careful and rigorous attitude and reasonable charges, which is just beneficial to both sides.
+        </p>
+        <h2>6.5 Revenue</h2>
+        <p>
+            Depending on the case, there are different charges. The first is the necessary basic expenses, which covers reasonable labor cost, laboratory rent, reagent, instrument and other material costs. The second is the design cost. The design cost is based on project scale and complexity, also related to the difficulty and the time-consuming of the experiment. The third cost is the cost of mass production. After we produce the target phage, if there is a demand for mass production, we will charge according to the quantity. On the whole, our charging scheme is rational and reasonable and trustworthy. Because of the low cost of raw materials, it is estimated that our net profit can reach at least 60%.
+        </p>
+        <p>
+            We may cooperate with other factories for processing, and this will cut part of the management costs. The advertising will be carried out throughout the product life cycle, with large investment in the early stage. And it will gradually decrease after establishing a good reputation. Therefore, we expect to achieve profitability in the second year, and then the profit rate will gradually increase while the net profit will increase with the increase of the main income level.
+        </p>
+        <h2>6.6 Product Planning</h2>
+        <p>
+            In our general plan, we believe that China will be able to have diverse phage products and legalize human phage drugs in the next decade under the current trend, policy and market background. The abuse of antibiotics will be greatly improved in the future and this is the golden development period of our products.
+        </p>
+        <p>
+            The short-term goals of our project are to, first of all, increase the professional staff, expand the team, and carry out phage restart experiments many times. We need to collect more data and experience for future use. Also, need to contact various bacteriophage manufacturers, drug companies and research institutes to obtain their wishes and discuss the next step. It is estimated that 100-200 thousand  will be invested in the next year to improve and upgrade the current technology, so as to maintain the core technology to further meet the needs of users.
+        </p>
+        <p>
+            Our long-term goal is to expand the production scale, build two production lines and one internal inspection and evaluation center. We aim to provide the best performance, the lowest price ideal phage.
+        </p>
+    </article>
+    <p class="text-right">
+        <a href="https://2020.igem.org/Team:DUT_China/Legislative">Implementation - Legislative Proposals&#10148;</a>
+    </p>
+</section>
+<footer id="footer">
+    <img class="flower flower1" src="img/T--DUT_China--flower1.png" alt="">
+    <img class="flower flower2" src="img/T--DUT_China--flower2.png" alt="">
+    <p class="copyright">© 2020 Dalian University of Technology iGEM Team</p>
+    <div class="row">
+        <div class="col-lg-4 footer-left">
+            <h2><span>DUT</span> iGEM Players</h2>
+            <img src="img/T--DUT_China--logo.svg" alt="School Logo">
+            <p class="plain-text text-left">
+                <b>Address</b>: No.2 Linggong Road, Ganjingzi District, Dalian City, Liaoning Province, P.R.C.,
+                116024<br>
+                <b>Official Website</b>: <a href="http://en.dlut.edu.cn/" target="_blank">http://en.dlut.edu.cn/</a><br>
+                <b>Team Email</b>: <a href="mailto:igem_dlut@163.com" title="Click to contact us">igem_dlut@163.com</a>
+            </p>
+        </div>
+
+        <div class="col-lg-4 footer-center">
+            <div>
+                <h4>About Dalian University of Technology</h4>
+                <p class="plain-text school-intro text-left">
+                    Dalian University of Technology (DUT) is a national key university administrated directly under the
+                    Ministry of Education of China, which is also sponsored by Project 211 and Project 985. DUT keeps
+                    fostering elites, promoting science and technology, inheriting excellent cultures and guiding the
+                    social climate as its mission, adheres to DUT spirit of “Unity and Progress, Truth and Innovation”,
+                    dedicates itself to the creation, discovery, impart, conservation and application of knowledge, and
+                    endeavors to undertake social responsibilities to serve the country and the world.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 footer-right">
+            <div>
+                <h4>Follow us</h4>
+                <p class="plain-text">
+                    <a target="_blank" href="https://mp.weixin.qq.com/s/gDbIeINj-mwxmwDkOSyFQg">
+                        WeChat Official Account
+                    </a>
+                    <br>
+                    <a target="_blank" href="https://space.bilibili.com/494554805/">
+                        Bilibili Account
+                    </a>
+                </p>
+            </div>
+            <br>
+            <div>
+                <h4>Sponsors</h4>
+                <img src="img/T--DUT_China--SnapGene_Logo.png" alt="SnapGene">
+                <br>
+                <img src="img/T--DUT_China--biology.svg" alt="School of Bioengineering">
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    //About the sidebar & top-scroll--linked to sidebar.js & general.js
+    window.onload = function () {
+        let navHeight = document.getElementById('nav-bar').offsetHeight;
+        for (let i = 0; i < itemArray.length; i++) {
+            itemArray[i].addEventListener('click', function () {
+                scroll({
+                    top: articleArray[i].offsetTop - navHeight + 5,
+                    //To prevent the overshadow of the navigation bar
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            });
+            //Click the items to scroll
+            pageView(canvasArray[i], itemArray[i], articleArray[i]);//Update
+        }
+        setTopScroll();
+    };
+
+    window.onresize = window.onscroll = function () {
+        for (let i = 0; i < canvasArray.length; i++) {
+            pageView(canvasArray[i], itemArray[i], articleArray[i]);//Update
+        }
+        let textT = document.getElementById("main-text").offsetTop;
+        let currentH = document.documentElement.scrollTop || document.body.scrollTop;
+        let sidebar = document.getElementById("sidebar");
+        let topScroll = document.getElementById("top-scroll");
+        if (currentH > textT - 130) {
+            sidebar.setAttribute("class", "sidebar-active");
+            topScroll.setAttribute("class", "top-scroll-active");
+        } else {
+            sidebar.setAttribute("class", "");
+            topScroll.setAttribute("class", "");
+        }
+    };
+</script>
+</body>
+</html>

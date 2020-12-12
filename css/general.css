@@ -1,0 +1,331 @@
+/*
+ *general.css--Styles used on ALL pages
+ */
+
+@font-face {
+    font-family: "Barlow";
+    src: url('https://2020.igem.org/wiki/images/2/26/T--DUT_China--Barlow-Medium.otf');
+}
+
+@font-face {
+    font-family: "Barlow";
+    font-weight: bold;
+    src: url('https://2020.igem.org/wiki/images/8/89/T--DUT_China--Barlow-Bold.otf');
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("https://2020.igem.org/wiki/images/4/46/T--DUT_China--NotoSans-Regular-2.ttf");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-weight: bold;
+    src: url("https://2020.igem.org/wiki/images/1/1c/T--DUT_China--NotoSans-Bold-5.ttf");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-style: italic;
+    src: url("https://2020.igem.org/wiki/images/4/45/T--DUT_China--NotoSans-Italic-3.ttf");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-style: italic;
+    src: url("https://2020.igem.org/wiki/images/7/7d/T--DUT_China--NotoSans-BoldItalic-4.ttf");
+}
+
+/*Title*/
+
+#title {
+    padding: 50px 0;
+    background-color: white;
+    -o-background-image: linear-gradient(90deg, rgba(154, 176, 210, .5) 50%, transparent 50%), linear-gradient(rgba(154, 176, 210, .5) 50%, transparent 50%);
+    -moz-background-image: linear-gradient(90deg, rgba(154, 176, 210, .5) 50%, transparent 50%), linear-gradient(rgba(154, 176, 210, .5) 50%, transparent 50%);
+    -webkit-background-image: linear-gradient(90deg, rgba(154, 176, 210, .5) 50%, transparent 50%), linear-gradient(rgba(154, 176, 210, .5) 50%, transparent 50%);
+    background-image: linear-gradient(90deg, rgba(154, 176, 210, .5) 50%, transparent 50%), linear-gradient(rgba(154, 176, 210, .5) 50%, transparent 50%);
+    -o-background-size: 80px 80px;
+    -moz-background-size: 80px 80px;
+    -webkit-background-size: 80px 80px;
+    background-size: 80px 80px;
+}
+
+#title div {
+    width: 100%;
+    font-family: "Noto Sans", "Segoe UI", Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Whole Navigation Bar*/
+
+#nav-bar {
+    top: 10px;
+    padding: 5px;
+    color: white;
+    font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    background-color: rgba(85, 84, 85, 0.5);
+}
+
+#nav-bar .navbar-brand img {
+    height: 80px;
+}
+
+#nav-bar .nav-link {
+    color: white;
+    background-color: inherit;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transition: all ease 200ms;
+    -o-transition: all ease 200ms;
+    -moz-transition: all ease 200ms;
+    -webkit-transition: all ease 200ms;
+    border-radius: 5px;
+}
+
+/*Submenu*/
+
+#nav-bar .dropdown-menu, #nav-bar .dropdown-item {
+    color: inherit;
+    font: inherit;
+    border: none;
+}
+
+#nav-bar .dropdown-menu > a {
+    -o-transition: ease 500ms;
+    -moz-transition: ease 500ms;
+    -webkit-transition: ease 500ms;
+    transition: ease 500ms;
+}
+
+#nav-bar .dropdown-menu > a:hover {
+    background-color: rgba(87, 102, 99, 0.65);
+}
+
+#nav-bar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*Responsive--Smaller than PC*/
+
+@media only screen and (max-width: 992px) {
+    #nav-bar {
+        background-color: rgb(85, 84, 85);
+    }
+
+    #nav-bar .nav-item {
+        padding: 0 1rem;
+    }
+
+    #nav-bar .nav-item img {
+        display: none;
+    }
+
+    #nav-bar .dropdown-menu {
+        background-color: #03a9f4;
+    }
+
+    #nav-bar .dropdown-menu > a:hover {
+        background-color: #576663;
+    }
+}
+
+/*Responsive--PC*/
+
+@media only screen and (min-width: 992px) {
+    #nav-bar .nav-item {
+        text-align: center;
+    }
+
+    #nav-bar .nav-item * {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #nav-bar .dropdown-toggle::after {
+        content: none;
+    }
+
+    #nav-bar .nav-link {
+        padding: 0 !important;
+        margin: 0 0.5rem;
+    }
+
+    #nav-bar .nav-link:hover {
+        background-color: rgba(33, 150, 243, 0.65);
+    }
+
+    #nav-bar .nav-logo {
+        height: 80px;
+    }
+
+    #nav-bar .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        visibility: hidden;
+        background-color: rgba(3, 169, 244, 0);
+        -o-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        -o-transition: all ease-out 400ms;
+        -moz-transition: all ease-out 400ms;
+        -webkit-transition: all ease-out 400ms;
+        transition: all ease-out 400ms;
+    }
+
+    #nav-bar .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        background-color: rgba(3, 169, 244, 0.65);
+        -o-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    #nav-bar .nav-item:last-child .dropdown-menu {
+        left: unset;
+        right: 0;
+    }
+
+    #nav-bar .dropdown-item {
+        padding: .25rem 1.5rem !important;
+        opacity: 0;
+    }
+
+    #nav-bar .dropdown:hover .dropdown-item {
+        opacity: 1;
+    }
+}
+
+/*Top Scroll*/
+
+#top-scroll {
+    position: fixed;
+    z-index: 1;
+    right: 40px;
+    bottom: 40px;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: opacity 800ms ease, transform 500ms ease;
+    -moz-transition: opacity 800ms ease, transform 500ms ease;
+    -webkit-transition: opacity 800ms ease, transform 500ms ease;
+    transition: opacity 800ms ease, transform 500ms ease;
+}
+
+#top-scroll.top-scroll-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+#top-scroll:hover {
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/*Whole footer*/
+
+#footer {
+    position: relative;
+    z-index: 0;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+    background-color: #333;
+}
+
+.footer-left, .footer-center, .footer-right {
+    position: relative;
+    z-index: 2;
+}
+
+/*2 images of flowers*/
+
+.flower {
+    position: absolute;
+    z-index: 1;
+}
+
+.flower1 {
+    bottom: 0;
+    left: 0;
+    width: 400px;
+}
+
+.flower2 {
+    top: 0;
+    right: 0;
+    width: 350px;
+}
+
+/*Copyright*/
+
+#footer .copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    color: #8f9296;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+/*Headers*/
+
+#footer h2 {
+    color: inherit;
+    font-family: "Comic Sans MS", cursive;
+}
+
+#footer h2 span {
+    color: #0073bb;
+}
+
+#footer h4 {
+    color: inherit;
+    font-family: inherit;
+}
+
+/*School badge*/
+
+.footer-left img {
+    width: 150px;
+    margin: 10px 0;
+}
+
+/*Information & Introduction*/
+
+#footer .plain-text {
+    line-height: 1.25em;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: inherit;
+}
+
+#footer a {
+    color: #0073bb;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.school-intro {
+    color: #92999f;
+}
+
+/*Follow Us & Sponsors*/
+
+.footer-right img {
+    height: 80px;
+}
